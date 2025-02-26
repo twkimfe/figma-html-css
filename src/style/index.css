@@ -1,0 +1,97 @@
+@import "/src/common/a11y.css";
+/* 기본 색상 설정 */
+:root {
+  --grayScale-white: #fffcf9;
+  --grayScale-black: #282725;
+
+  --font-small-15: 0.9375rem;
+  --font-default-16: 1rem;
+
+  --spacing-10: 0.625rem;
+  --spacing-30: 1.875rem;
+}
+
+/* 초기화 */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.nav-container {
+  --nav-bg-color: var(--grayScale-black);
+  --nav-font-color: var(--grayScale-white);
+  background-color: var(--nav-bg-color);
+
+  background-color: var(--grayScale-black);
+  width: 90rem;
+  margin: 20px auto;
+
+  .spilt-nav-head {
+    background-color: orange;
+
+    width: 100%;
+    height: 5.125rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .spilt-nav-body {
+    width: 90rem;
+    height: 12.1875rem;
+
+    color: var(--nav-font-color);
+  }
+}
+
+.linklist {
+  background-color: green;
+
+  --normal-padding: var(--spacing-10);
+  --normal-gap: var(--spacing-30);
+
+  padding: var(--normal-padding);
+  margin: 20.5px auto 21.5px 109px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--normal-gap);
+  font-size: var(--font-default-16);
+  box-sizing: border-box;
+  width: 159px;
+  height: 40px;
+
+  ul {
+    padding: var(--normal-padding);
+  }
+
+  a {
+    color: var(--grayScale-white);
+  }
+}
+
+.home-logo {
+  background-color: aqua;
+  display: inline-flex;
+
+  margin: 21px 670px;
+
+  .logo-img {
+    margin-right: 7.273px;
+  }
+}
+
+.search-section {
+  background-color: purple;
+}
